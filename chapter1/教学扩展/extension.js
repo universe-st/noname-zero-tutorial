@@ -1,0 +1,50 @@
+game.import("extension",function(lib,game,ui,get,ai,_status){return {name:"教学扩展",content:function(config,pack){
+    
+},precontent:function(){
+    
+},config:{},help:{},package:{
+    character:{
+        character:{
+            'jxkz_pamu':['male','shu',5,['jxkz_shuohua','jxkz_baoyuan'],['des:列车长。']],
+        },
+        translate:{
+            'jxkz_pamu':'帕姆',
+        },
+    },
+    card:{
+        card:{
+        },
+        translate:{
+        },
+        list:[],
+    },
+    skill:{
+        skill:{
+            'jxkz_shuohua':{
+                enable:'phaseUse',
+                content:function(){
+                    player.say("你好，无名杀！");
+                }
+            },
+            'jxkz_baoyuan':{
+                trigger:{
+                    player:'damageEnd',
+                },
+                content:function(){
+                    player.say('你干嘛哈哈哎呦');
+                }
+            }
+        },
+        translate:{
+            'jxkz_shuohua':'说话',
+            'jxkz_shuohua_info':'出牌阶段，你可以说“你好，无名杀”。',
+            'jxkz_baoyuan':'抱怨',
+            'jxkz_baoyuan_info':'你受到伤害后，你可以进行抱怨。',
+        },
+    },
+    intro:"",
+    author:"无名玩家",
+    diskURL:"",
+    forumURL:"",
+    version:"1.0",
+},files:{"character":[],"card":[],"skill":[],"audio":[]}}})
